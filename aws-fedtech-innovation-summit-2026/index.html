@@ -46,27 +46,31 @@
   }
   nav.main a:hover{color:var(--pink)}
   .pill{
-    font-family:var(--head);display:inline-block;background:var(--pink);color:#fff;
+    font-family:var(--head);display:inline-block;background:#cf2e70;color:#fff;
     text-decoration:none;font-weight:500;font-size:14px;padding:11px 22px;border-radius:5px;
-    white-space:nowrap;flex:none;
+    white-space:nowrap;flex:none;transition:background .15s;
   }
-  .pill:hover{background:#a82661}
+  .pill:hover{background:#c42e70}
   @media(max-width:900px){ nav.main a:not(.pill){display:none} }
 
   /* ---------- hero ---------- */
+  /* hero gradient taken from solidcore.ai (#870068 magenta + #430035 plum glows) */
   .hero{
-    background:
-      radial-gradient(circle at 8% 92%, rgba(135,0,104,.60), rgba(135,0,104,0) 46%),
-      radial-gradient(circle at 96% 4%, rgba(196,46,112,.42), rgba(196,46,112,0) 48%),
-      var(--ink);
+    background-color:#870068;
+    background-image:
+      radial-gradient(circle at 0% 100%, #430035 0%, rgba(67,0,53,0) 60%),
+      radial-gradient(circle at 100% 96%, #430035 0%, rgba(67,0,53,0) 42%),
+      radial-gradient(circle at 90% 52%, rgba(255,255,255,.14) 0%, rgba(255,255,255,0) 18%),
+      radial-gradient(circle at 2% 6%, #870068 0%, rgba(135,0,104,0) 68%),
+      radial-gradient(circle at 96% 10%, #9c1277 0%, rgba(156,18,119,0) 64%);
     color:#fff;text-align:center;padding:84px 28px 92px;
   }
   .eyebrow{
     font-family:var(--head);text-transform:uppercase;letter-spacing:.17em;
-    font-size:12px;font-weight:700;color:#e2a6c9;margin-bottom:20px;
+    font-size:12px;font-weight:700;color:#f2c2dd;margin-bottom:20px;
   }
   .hero h1{font-family:var(--head);font-size:34px;line-height:1.16;font-weight:700;margin-bottom:20px}
-  .hero p{font-family:var(--head);font-weight:400;font-size:19px;line-height:1.5;color:rgba(255,255,255,.8);max-width:600px;margin:0 auto}
+  .hero p{font-family:var(--head);font-weight:400;font-size:19px;line-height:1.5;color:rgba(255,255,255,.88);max-width:600px;margin:0 auto}
   @media(min-width:700px){ .hero h1{font-size:46px} }
 
   /* ---------- light body ---------- */
