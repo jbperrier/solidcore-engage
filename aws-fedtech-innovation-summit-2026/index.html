@@ -44,13 +44,13 @@
     font-family:var(--head);font-size:14px;font-weight:400;color:var(--ink);
     text-decoration:none;white-space:nowrap;
   }
-  nav.main a:hover{color:var(--pink)}
+  nav.main a:not(.pill):hover{color:var(--pink)}
   .pill{
     font-family:var(--head);display:inline-block;background:#cf2e70;color:#fff;
     text-decoration:none;font-weight:500;font-size:14px;padding:11px 22px;border-radius:5px;
     white-space:nowrap;flex:none;transition:background .15s;
   }
-  .pill:hover{background:#c42e70}
+  .pill:hover{background:#c42e70;color:#fff}
   @media(max-width:900px){ nav.main a:not(.pill){display:none} }
 
   /* ---------- hero ---------- */
